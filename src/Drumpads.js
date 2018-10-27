@@ -1,6 +1,19 @@
 import React, { Component } from 'react';
 
+import './Drumpads.css'
+
 export default class Drumpads extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            active: false
+        }
+    }
+
+
+
+
 
     componentDidMount() {
         console.log(this.audio)

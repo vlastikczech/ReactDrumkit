@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import'./Drumkit.css';
 
 import Drumpads from './Drumpads'
 
@@ -14,19 +15,22 @@ export default class Drumkit extends Component {
 
     render(){
         return(
-            <div id='drum-machine'>
-                <div id='display'>{this.state.display}</div>
-                <div id='drum-pads'>{boardOne.map(d => (
-                    <Drumpads
-                        key={d.id}
-                        id={d.id}
-                        keycode={d.keyCode}
-                        letter={d.keyTrigger}
-                        src={d.src}
-                        handleDisplay={this.handleDisplay}
-                    />
-                ))}</div>
+            <div className='container'>
+                <div id='drum-machine'>
+                    <div id='display'>{this.state.display}</div>
+                    <div id='drum-pads'>{boardOne.map(d => (
+                        <Drumpads
+                            key={d.id}
+                            id={d.id}
+                            keycode={d.keyCode}
+                            letter={d.keyTrigger}
+                            src={d.src}
+                            handleDisplay={this.handleDisplay}
+                        />
+                    ))}</div>
+                </div>
             </div>
+
         )
     }
 }
