@@ -7,7 +7,7 @@ Built by Vlastik Walker
 ## About
 
 * A fun drumkit page that has unique audio to each key
-* User can either click or use 'q, w, e, a, d, z, x ,c' for keystroke to play the sound
+* User can either click or use ```q, w, e, a, d, z, x ,c``` for keystroke to play the sound
 * Depending on the key id the display changes according to the audio being played
 
 ## Languages used
