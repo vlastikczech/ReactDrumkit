@@ -1,13 +1,14 @@
-# TvSeries
+# Drumkit
 
 Built by Vlastik Walker
 
 
+
 ## About
 
-* A simple drumkit that allows the user to press keys 'q,w,e,a,d,z,x,c'
-* Uses React Router to redirect to the series page
-* User can either click or use their keyboard and have an specific audio play
+* A fun drumkit page that has unique audio to each key
+* User can either click or use 'q, w, e, a, d, z, x ,c' for keystroke to play the sound
+* Depending on the key id the display changes according to the audio being played
 
 ## Languages used
 
@@ -22,7 +23,7 @@ Built by Vlastik Walker
 ## Get started
 
 ```
-git clone https://github.com/vlastikczech/ReactDrumkit
+https://github.com/vlastikczech/ReactDrumkit.git
 
 yarn install
 yarn start
