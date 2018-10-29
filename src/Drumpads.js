@@ -52,10 +52,13 @@ export default class Drumpads extends Component {
             this.audio.play()
             this.audio.currentTime = 0 
             this.props.handleDisplay(this.props.id)
-            document.getElementById(this.props.id).style.border = '2px solid red'
+            document.getElementById(this.props.id).style.backgroundColor = 'white'
+            document.getElementById(this.props.id).style.color = 'black'
+
         }
         else {
-            document.getElementById(this.props.id).style.border = '2px solid white'
+            document.getElementById(this.props.id).style.backgroundColor = 'transparent'
+            document.getElementById(this.props.id).style.color = 'white'
         }
     }
 
