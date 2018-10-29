@@ -1,5 +1,5 @@
 .container {
-    height: 969px;
+    height: 100vh;
     background-image: url("./asset/pic.jpeg");
     width: 100%;
 }

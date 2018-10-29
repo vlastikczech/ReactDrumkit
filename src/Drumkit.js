@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Container, Row, Col } from 'reactstrap';
+
 import'./Drumkit.css';
 
 import Drumpads from './Drumpads'
@@ -15,7 +17,8 @@ export default class Drumkit extends Component {
 
     render(){
         return(
-            <div className='container'>
+            <Container >
+                <Row>
                 <div id='drum-machine'>
                     <div id='display'>{this.state.display}</div>
                     <div id='drum-pads'>{boardOne.map(d => (
@@ -29,8 +32,8 @@ export default class Drumkit extends Component {
                         />
                     ))}</div>
                 </div>
-            </div>
-
+                </Row>
+            </Container>
         )
     }
 }

@@ -2,13 +2,35 @@ import React, { Component } from 'react';
 
 import './Drumpads.css'
 
+
+var styles = {
+    on: {
+        color: 'pink'
+    },
+    off: {
+        color: 'white'
+    }
+}
+
 export default class Drumpads extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            active: false
+            keypressActive: 'off'
         }
+    }
+
+    changeColor = () => {
+        this.setState({
+            kepressActive: 'on'
+        })
+    }
+
+    resetColor = () => {
+        this.setState({
+            keypressActive: 'off'
+        })
     }
 
 
@@ -28,8 +50,12 @@ export default class Drumpads extends Component {
     handleKeydown = e => {
         if(e.keyCode === this.props.keycode) {
             this.audio.play()
-            this.audio.currentTime = 0
+            this.audio.currentTime = 0 
             this.props.handleDisplay(this.props.id)
+            document.getElementById(this.props.id).style.border = '2px solid red'
+        }
+        else {
+            document.getElementById(this.props.id).style.border = '2px solid white'
         }
     }
 
